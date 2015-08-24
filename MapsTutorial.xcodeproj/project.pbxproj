@@ -13,6 +13,8 @@
 		3F35E83E1B59937400B174EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F35E83D1B59937400B174EE /* Images.xcassets */; };
 		3F35E8411B59937400B174EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F35E83F1B59937400B174EE /* LaunchScreen.xib */; };
 		3F35E84D1B59937400B174EE /* MapsTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E84C1B59937400B174EE /* MapsTutorialTests.swift */; };
+		3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E8561B5997E300B174EE /* BasicMapVC.swift */; };
+		3F35E8591B59A46A00B174EE /* MapTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E8581B59A46A00B174EE /* MapTypesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3F35E8461B59937400B174EE /* MapsTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F35E84B1B59937400B174EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F35E84C1B59937400B174EE /* MapsTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTutorialTests.swift; sourceTree = "<group>"; };
+		3F35E8561B5997E300B174EE /* BasicMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMapVC.swift; sourceTree = "<group>"; };
+		3F35E8581B59A46A00B174EE /* MapTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTypesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				3F35E83D1B59937400B174EE /* Images.xcassets */,
 				3F35E83F1B59937400B174EE /* LaunchScreen.xib */,
 				3F35E8341B59937400B174EE /* Supporting Files */,
+				3F35E8561B5997E300B174EE /* BasicMapVC.swift */,
+				3F35E8581B59A46A00B174EE /* MapTypesVC.swift */,
 			);
 			path = MapsTutorial;
 			sourceTree = "<group>";
@@ -213,7 +219,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F35E8391B59937400B174EE /* ViewController.swift in Sources */,
+				3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */,
 				3F35E8371B59937400B174EE /* AppDelegate.swift in Sources */,
+				3F35E8591B59A46A00B174EE /* MapTypesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

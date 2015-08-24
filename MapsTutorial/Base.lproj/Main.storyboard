@@ -1,25 +1,144 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WFQ-IV-ZgX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfC-Ud-sDx">
+                                <rect key="frame" x="11" y="153" width="268" height="30"/>
+                                <state key="normal" title="Switching Map Type">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="M9v-ZI-b8h" kind="show" id="fd3-vT-hKZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHz-la-r6R">
+                                <rect key="frame" x="11" y="94" width="245" height="42"/>
+                                <state key="normal" title="Basic Map - centre, set region">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GZW-d4-aBW" kind="show" id="o6A-Eh-lkB"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MMo-FA-ITB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1214" y="474"/>
+        </scene>
+        <!--Basic MapVC-->
+        <scene sceneID="3Lj-wX-fp2">
+            <objects>
+                <viewController id="GZW-d4-aBW" customClass="BasicMapVC" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="unx-K4-4wa"/>
+                        <viewControllerLayoutGuide type="bottom" id="P9c-Sg-QGM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ERC-s0-tu1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-zg-oc4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Mw-zg-oc4" secondAttribute="trailing" id="1mD-Hb-Bsn"/>
+                            <constraint firstItem="7Mw-zg-oc4" firstAttribute="bottom" secondItem="P9c-Sg-QGM" secondAttribute="top" id="T1Y-Jg-waH"/>
+                            <constraint firstItem="7Mw-zg-oc4" firstAttribute="leading" secondItem="ERC-s0-tu1" secondAttribute="leading" id="hCQ-9b-p5q"/>
+                            <constraint firstItem="7Mw-zg-oc4" firstAttribute="top" secondItem="ERC-s0-tu1" secondAttribute="top" id="nUu-ST-aS2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="7Mw-zg-oc4" id="Fxn-Xn-fg8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gsy-EH-SFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-504" y="1365"/>
+        </scene>
+        <!--Map TypesVC-->
+        <scene sceneID="OVN-xi-MXX">
+            <objects>
+                <viewController id="M9v-ZI-b8h" customClass="MapTypesVC" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xzG-rZ-d5L"/>
+                        <viewControllerLayoutGuide type="bottom" id="hfM-LT-fqE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s5G-kQ-ajD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="veQ-3D-WXD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7iS-CX-PMn">
+                                <rect key="frame" x="64" y="73" width="287" height="29"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Hybrid"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <connections>
+                                    <action selector="mapTypeChanged:" destination="M9v-ZI-b8h" eventType="valueChanged" id="ivy-QM-eMl"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="veQ-3D-WXD" firstAttribute="leading" secondItem="s5G-kQ-ajD" secondAttribute="leading" id="JDR-zQ-F0t"/>
+                            <constraint firstItem="veQ-3D-WXD" firstAttribute="top" secondItem="s5G-kQ-ajD" secondAttribute="top" id="cyh-DS-Pxl"/>
+                            <constraint firstItem="veQ-3D-WXD" firstAttribute="bottom" secondItem="hfM-LT-fqE" secondAttribute="top" id="gNQ-Xk-3wm"/>
+                            <constraint firstAttribute="trailing" secondItem="veQ-3D-WXD" secondAttribute="trailing" id="oHs-8s-aFJ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="veQ-3D-WXD" id="dga-HH-Rhk"/>
+                        <outlet property="mapsSegCtrl" destination="7iS-CX-PMn" id="PGf-9z-ujQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cvt-Ak-C7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="1365"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VvR-hO-gae">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WFQ-IV-ZgX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pz2-Id-k5G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MOD-qc-Nlr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzC-EJ-QpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="402" y="474"/>
         </scene>
     </scenes>
 </document>
