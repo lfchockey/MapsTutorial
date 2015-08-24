@@ -9,6 +9,8 @@
 import UIKit
 import MapKit // You also need to set the Projects=> Capabilities => Maps to 'On'
 
+
+// This Map shows the basics of making a map and zoomed in on a specific place based on its latitude and longitude
 class BasicMapVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!

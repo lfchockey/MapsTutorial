@@ -25,6 +25,24 @@
                                     <segue destination="M9v-ZI-b8h" kind="show" id="fd3-vT-hKZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-Sl-ZZE">
+                                <rect key="frame" x="11" y="208" width="268" height="30"/>
+                                <state key="normal" title="Zooming the Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jMU-Ai-alY" kind="show" id="aMw-fB-Nv6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaG-gC-3Ks">
+                                <rect key="frame" x="11" y="262" width="268" height="30"/>
+                                <state key="normal" title="Annotate (Pop-Up) the Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="q1n-qs-aN9" kind="show" id="8MB-xt-y2f"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHz-la-r6R">
                                 <rect key="frame" x="11" y="94" width="245" height="34"/>
                                 <state key="normal" title="Basic Map - centre, set region">
@@ -34,13 +52,31 @@
                                     <segue destination="GZW-d4-aBW" kind="show" id="o6A-Eh-lkB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-Sl-ZZE">
-                                <rect key="frame" x="11" y="208" width="268" height="30"/>
-                                <state key="normal" title="Zooming the Map">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFv-Of-Nog">
+                                <rect key="frame" x="11" y="315" width="268" height="30"/>
+                                <state key="normal" title="Annotate with Image on Map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jMU-Ai-alY" kind="show" id="aMw-fB-Nv6"/>
+                                    <segue destination="36b-1k-fgi" kind="show" id="HL5-0u-pfj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QP0-jp-aWR">
+                                <rect key="frame" x="11" y="369" width="268" height="30"/>
+                                <state key="normal" title="Image Overlay on Map (using plist)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="47u-Hy-hO5" kind="show" id="cyD-9w-U5C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcR-Wl-x88">
+                                <rect key="frame" x="11" y="424" width="268" height="30"/>
+                                <state key="normal" title="Polygon on Map (using plist)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F1l-mf-Asy" kind="show" id="eZw-4A-NqR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -201,6 +237,147 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J0B-wk-tF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="430" y="1365"/>
+        </scene>
+        <!--Annotation MapVC-->
+        <scene sceneID="s41-oQ-cfl">
+            <objects>
+                <viewController id="q1n-qs-aN9" customClass="AnnotationMapVC" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x24-JW-L1n"/>
+                        <viewControllerLayoutGuide type="bottom" id="t0u-3p-zeS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gNx-sb-hIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dGT-cR-SzB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dGT-cR-SzB" firstAttribute="bottom" secondItem="t0u-3p-zeS" secondAttribute="top" id="SdB-yE-Gi1"/>
+                            <constraint firstItem="dGT-cR-SzB" firstAttribute="top" secondItem="gNx-sb-hIi" secondAttribute="top" id="mSt-fc-TLD"/>
+                            <constraint firstItem="dGT-cR-SzB" firstAttribute="leading" secondItem="gNx-sb-hIi" secondAttribute="leading" id="sWo-Sd-hsS"/>
+                            <constraint firstAttribute="trailing" secondItem="dGT-cR-SzB" secondAttribute="trailing" id="wJ3-hS-drQ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="dGT-cR-SzB" id="jSe-9E-dhL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Krw-H5-dim" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910" y="1365"/>
+        </scene>
+        <!--Annotate ImageVC-->
+        <scene sceneID="XrU-uf-Nvn">
+            <objects>
+                <viewController id="36b-1k-fgi" customClass="AnnotateImageVC" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gpv-es-Fea"/>
+                        <viewControllerLayoutGuide type="bottom" id="pCO-P5-kJW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nyz-oH-D6F">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kaD-qJ-QNj">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <connections>
+                                    <outlet property="delegate" destination="36b-1k-fgi" id="Hs7-cL-QYY"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kaD-qJ-QNj" firstAttribute="bottom" secondItem="pCO-P5-kJW" secondAttribute="top" id="WR0-xa-R7W"/>
+                            <constraint firstAttribute="trailing" secondItem="kaD-qJ-QNj" secondAttribute="trailing" id="WsQ-Ji-Cg6"/>
+                            <constraint firstItem="kaD-qJ-QNj" firstAttribute="top" secondItem="nyz-oH-D6F" secondAttribute="top" id="aon-GA-KLg"/>
+                            <constraint firstItem="kaD-qJ-QNj" firstAttribute="leading" secondItem="nyz-oH-D6F" secondAttribute="leading" id="eFs-de-emW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="kaD-qJ-QNj" id="3yL-Y9-Kqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vc0-nx-yjf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="1365"/>
+        </scene>
+        <!--Image Overlay MapVC-->
+        <scene sceneID="hra-Um-dB7">
+            <objects>
+                <viewController id="47u-Hy-hO5" customClass="ImageOverlayMapVC" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ec0-VD-3NT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ozs-Z2-QyI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W8I-l8-2tn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="XtI-5e-e9D">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <connections>
+                                    <outlet property="delegate" destination="47u-Hy-hO5" id="V7e-FA-AoI"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XtI-5e-e9D" firstAttribute="bottom" secondItem="Ozs-Z2-QyI" secondAttribute="top" id="17h-RP-uTl"/>
+                            <constraint firstItem="XtI-5e-e9D" firstAttribute="top" secondItem="W8I-l8-2tn" secondAttribute="top" id="3Ep-f2-r52"/>
+                            <constraint firstItem="XtI-5e-e9D" firstAttribute="leading" secondItem="W8I-l8-2tn" secondAttribute="leading" id="h2d-uX-s6T"/>
+                            <constraint firstAttribute="trailing" secondItem="XtI-5e-e9D" secondAttribute="trailing" id="wI0-cI-AXF"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="XtI-5e-e9D" id="Cho-G9-5Cg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oPa-sl-ACx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="1365"/>
+        </scene>
+        <!--Polygon OverlayVC-->
+        <scene sceneID="bl6-xO-mxB">
+            <objects>
+                <viewController id="F1l-mf-Asy" customClass="PolygonOverlayVC" customModule="MapsTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bWe-Lw-Z1A"/>
+                        <viewControllerLayoutGuide type="bottom" id="CbX-mc-mco"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3G6-l7-ncF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yd5-bX-xlb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <connections>
+                                    <outlet property="delegate" destination="F1l-mf-Asy" id="w6B-RQ-mnE"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yd5-bX-xlb" firstAttribute="leading" secondItem="3G6-l7-ncF" secondAttribute="leading" id="9ys-9y-SQq"/>
+                            <constraint firstAttribute="trailing" secondItem="yd5-bX-xlb" secondAttribute="trailing" id="UVw-5G-8TP"/>
+                            <constraint firstItem="yd5-bX-xlb" firstAttribute="bottom" secondItem="CbX-mc-mco" secondAttribute="top" id="UpH-OE-Qfd"/>
+                            <constraint firstItem="yd5-bX-xlb" firstAttribute="top" secondItem="3G6-l7-ncF" secondAttribute="top" id="ZYi-tf-bbW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mapView" destination="yd5-bX-xlb" id="P5w-kT-sqo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQa-Xw-fPR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2288" y="1365"/>
         </scene>
     </scenes>
 </document>

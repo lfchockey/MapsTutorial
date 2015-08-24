@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import MapKit
+import MapKit // You also need to set the Projects=> Capabilities => Maps to 'On'
 
+// This Map provides you with different map Types (Standard, Hybrid & Sattelite)
 class MapTypesVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!

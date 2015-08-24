@@ -16,6 +16,14 @@
 		3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E8561B5997E300B174EE /* BasicMapVC.swift */; };
 		3F35E8591B59A46A00B174EE /* MapTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E8581B59A46A00B174EE /* MapTypesVC.swift */; };
 		F10C32B91B8B628B00B879E0 /* ZoomMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32B81B8B628B00B879E0 /* ZoomMapVC.swift */; };
+		F10C32BB1B8B708300B879E0 /* AnnotationMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32BA1B8B708300B879E0 /* AnnotationMapVC.swift */; };
+		F10C32BD1B8B7BE500B879E0 /* AnnotateImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32BC1B8B7BE500B879E0 /* AnnotateImageVC.swift */; };
+		F10C32BF1B8BACB100B879E0 /* SFDCIPolygon.plist in Resources */ = {isa = PBXBuildFile; fileRef = F10C32BE1B8BACB100B879E0 /* SFDCIPolygon.plist */; };
+		F10C32C11B8BAF3500B879E0 /* SFDCICoordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C01B8BAF3500B879E0 /* SFDCICoordinates.swift */; };
+		F10C32C31B8BB10800B879E0 /* ImageOverlayMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C21B8BB10800B879E0 /* ImageOverlayMapVC.swift */; };
+		F10C32C61B8BB63E00B879E0 /* SFDCIMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C51B8BB63E00B879E0 /* SFDCIMapOverlay.swift */; };
+		F10C32C81B8BB9A700B879E0 /* SFDCIMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C71B8BB9A700B879E0 /* SFDCIMapOverlayView.swift */; };
+		F10C32CA1B8BC9E300B879E0 /* PolygonOverlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C91B8BC9E300B879E0 /* PolygonOverlayVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +50,14 @@
 		3F35E8561B5997E300B174EE /* BasicMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMapVC.swift; sourceTree = "<group>"; };
 		3F35E8581B59A46A00B174EE /* MapTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTypesVC.swift; sourceTree = "<group>"; };
 		F10C32B81B8B628B00B879E0 /* ZoomMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomMapVC.swift; sourceTree = "<group>"; };
+		F10C32BA1B8B708300B879E0 /* AnnotationMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotationMapVC.swift; sourceTree = "<group>"; };
+		F10C32BC1B8B7BE500B879E0 /* AnnotateImageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnotateImageVC.swift; sourceTree = "<group>"; };
+		F10C32BE1B8BACB100B879E0 /* SFDCIPolygon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SFDCIPolygon.plist; sourceTree = "<group>"; };
+		F10C32C01B8BAF3500B879E0 /* SFDCICoordinates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDCICoordinates.swift; sourceTree = "<group>"; };
+		F10C32C21B8BB10800B879E0 /* ImageOverlayMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOverlayMapVC.swift; sourceTree = "<group>"; };
+		F10C32C51B8BB63E00B879E0 /* SFDCIMapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDCIMapOverlay.swift; sourceTree = "<group>"; };
+		F10C32C71B8BB9A700B879E0 /* SFDCIMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDCIMapOverlayView.swift; sourceTree = "<group>"; };
+		F10C32C91B8BC9E300B879E0 /* PolygonOverlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonOverlayVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +108,9 @@
 				3F35E8561B5997E300B174EE /* BasicMapVC.swift */,
 				3F35E8581B59A46A00B174EE /* MapTypesVC.swift */,
 				F10C32B81B8B628B00B879E0 /* ZoomMapVC.swift */,
+				F10C32BA1B8B708300B879E0 /* AnnotationMapVC.swift */,
+				F10C32BC1B8B7BE500B879E0 /* AnnotateImageVC.swift */,
+				F10C32C41B8BB60A00B879E0 /* SFDCIImageOverlay */,
 			);
 			path = MapsTutorial;
 			sourceTree = "<group>";
@@ -119,6 +138,19 @@
 				3F35E84B1B59937400B174EE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F10C32C41B8BB60A00B879E0 /* SFDCIImageOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				F10C32C21B8BB10800B879E0 /* ImageOverlayMapVC.swift */,
+				F10C32C01B8BAF3500B879E0 /* SFDCICoordinates.swift */,
+				F10C32BE1B8BACB100B879E0 /* SFDCIPolygon.plist */,
+				F10C32C51B8BB63E00B879E0 /* SFDCIMapOverlay.swift */,
+				F10C32C71B8BB9A700B879E0 /* SFDCIMapOverlayView.swift */,
+				F10C32C91B8BC9E300B879E0 /* PolygonOverlayVC.swift */,
+			);
+			name = SFDCIImageOverlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F35E83C1B59937400B174EE /* Main.storyboard in Resources */,
+				F10C32BF1B8BACB100B879E0 /* SFDCIPolygon.plist in Resources */,
 				3F35E8411B59937400B174EE /* LaunchScreen.xib in Resources */,
 				3F35E83E1B59937400B174EE /* Images.xcassets in Resources */,
 			);
@@ -221,10 +254,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10C32CA1B8BC9E300B879E0 /* PolygonOverlayVC.swift in Sources */,
 				F10C32B91B8B628B00B879E0 /* ZoomMapVC.swift in Sources */,
+				F10C32C31B8BB10800B879E0 /* ImageOverlayMapVC.swift in Sources */,
+				F10C32C81B8BB9A700B879E0 /* SFDCIMapOverlayView.swift in Sources */,
 				3F35E8391B59937400B174EE /* ViewController.swift in Sources */,
+				F10C32BD1B8B7BE500B879E0 /* AnnotateImageVC.swift in Sources */,
 				3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */,
+				F10C32C61B8BB63E00B879E0 /* SFDCIMapOverlay.swift in Sources */,
 				3F35E8371B59937400B174EE /* AppDelegate.swift in Sources */,
+				F10C32C11B8BAF3500B879E0 /* SFDCICoordinates.swift in Sources */,
+				F10C32BB1B8B708300B879E0 /* AnnotationMapVC.swift in Sources */,
 				3F35E8591B59A46A00B174EE /* MapTypesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

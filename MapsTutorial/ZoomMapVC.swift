@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import MapKit
+import MapKit // You also need to set the Projects=> Capabilities => Maps to 'On'
 
+// This Map allows you to zoom in and out
 class ZoomMapVC: UIViewController {
 
     @IBOutlet weak var mapView: MKMapView!
