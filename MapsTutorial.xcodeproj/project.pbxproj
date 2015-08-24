@@ -15,6 +15,7 @@
 		3F35E84D1B59937400B174EE /* MapsTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E84C1B59937400B174EE /* MapsTutorialTests.swift */; };
 		3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E8561B5997E300B174EE /* BasicMapVC.swift */; };
 		3F35E8591B59A46A00B174EE /* MapTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F35E8581B59A46A00B174EE /* MapTypesVC.swift */; };
+		F10C32B91B8B628B00B879E0 /* ZoomMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32B81B8B628B00B879E0 /* ZoomMapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		3F35E84C1B59937400B174EE /* MapsTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsTutorialTests.swift; sourceTree = "<group>"; };
 		3F35E8561B5997E300B174EE /* BasicMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicMapVC.swift; sourceTree = "<group>"; };
 		3F35E8581B59A46A00B174EE /* MapTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapTypesVC.swift; sourceTree = "<group>"; };
+		F10C32B81B8B628B00B879E0 /* ZoomMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomMapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				3F35E8341B59937400B174EE /* Supporting Files */,
 				3F35E8561B5997E300B174EE /* BasicMapVC.swift */,
 				3F35E8581B59A46A00B174EE /* MapTypesVC.swift */,
+				F10C32B81B8B628B00B879E0 /* ZoomMapVC.swift */,
 			);
 			path = MapsTutorial;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10C32B91B8B628B00B879E0 /* ZoomMapVC.swift in Sources */,
 				3F35E8391B59937400B174EE /* ViewController.swift in Sources */,
 				3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */,
 				3F35E8371B59937400B174EE /* AppDelegate.swift in Sources */,
@@ -419,6 +423,7 @@
 				3F35E8521B59937400B174EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F35E8531B59937400B174EE /* Build configuration list for PBXNativeTarget "MapsTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +432,7 @@
 				3F35E8551B59937400B174EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

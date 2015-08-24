@@ -34,6 +34,7 @@ class BasicMapVC: UIViewController {
         //centerMapOnLocation(initialLocation)
     }
 
+    // This function is not needed to set the location, because it is handled completely above in the viewDidLoad method.
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
             regionRadius * 2.0, regionRadius * 2.0)
