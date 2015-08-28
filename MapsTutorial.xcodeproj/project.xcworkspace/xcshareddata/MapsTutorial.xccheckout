@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7890976E-89E7-466A-8BAC-6AE58F3CD7A1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MapsTutorial</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2C18A9199381FA7614BF9CD8B84DF13C5A585993</key>
+		<string>https://github.com/lfchockey/MapsTutorial.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MapsTutorial.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2C18A9199381FA7614BF9CD8B84DF13C5A585993</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lfchockey/MapsTutorial.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2C18A9199381FA7614BF9CD8B84DF13C5A585993</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2C18A9199381FA7614BF9CD8B84DF13C5A585993</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MapsTutorial</string>
+		</dict>
+	</array>
+</dict>
+</plist>

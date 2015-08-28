@@ -24,6 +24,7 @@
 		F10C32C61B8BB63E00B879E0 /* SFDCIMapOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C51B8BB63E00B879E0 /* SFDCIMapOverlay.swift */; };
 		F10C32C81B8BB9A700B879E0 /* SFDCIMapOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C71B8BB9A700B879E0 /* SFDCIMapOverlayView.swift */; };
 		F10C32CA1B8BC9E300B879E0 /* PolygonOverlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32C91B8BC9E300B879E0 /* PolygonOverlayVC.swift */; };
+		F10C32CC1B8CA79300B879E0 /* PolyLineMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10C32CB1B8CA79300B879E0 /* PolyLineMapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F10C32C51B8BB63E00B879E0 /* SFDCIMapOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDCIMapOverlay.swift; sourceTree = "<group>"; };
 		F10C32C71B8BB9A700B879E0 /* SFDCIMapOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFDCIMapOverlayView.swift; sourceTree = "<group>"; };
 		F10C32C91B8BC9E300B879E0 /* PolygonOverlayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolygonOverlayVC.swift; sourceTree = "<group>"; };
+		F10C32CB1B8CA79300B879E0 /* PolyLineMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolyLineMapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				F10C32BA1B8B708300B879E0 /* AnnotationMapVC.swift */,
 				F10C32BC1B8B7BE500B879E0 /* AnnotateImageVC.swift */,
 				F10C32C41B8BB60A00B879E0 /* SFDCIImageOverlay */,
+				F10C32CB1B8CA79300B879E0 /* PolyLineMapVC.swift */,
 			);
 			path = MapsTutorial;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				3F35E8391B59937400B174EE /* ViewController.swift in Sources */,
 				F10C32BD1B8B7BE500B879E0 /* AnnotateImageVC.swift in Sources */,
 				3F35E8571B5997E300B174EE /* BasicMapVC.swift in Sources */,
+				F10C32CC1B8CA79300B879E0 /* PolyLineMapVC.swift in Sources */,
 				F10C32C61B8BB63E00B879E0 /* SFDCIMapOverlay.swift in Sources */,
 				3F35E8371B59937400B174EE /* AppDelegate.swift in Sources */,
 				F10C32C11B8BAF3500B879E0 /* SFDCICoordinates.swift in Sources */,
